@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Coding Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Coding Survey</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" label id="name-label">Enter Your Name: <input id="name" name="name" type="text" required placeholder="John Doe"/></label>
+        
+        <label for="email" label id="email-label">Enter Your Email: <input id="email" name="email" type="email" required placeholder="johndoe@gmail.com" /></label>
+       </fieldset>
+      <fieldset> Why do you code?
+       
+       <label for="personal-reasons"><input id="personal-reasons" type="radio" value="personal-reasons" name="account-purpose" class="inline" /> Personal Reasons</label>
+        
+        <label for="work-reasons"><input id="work-reasons" type="radio" value="work-reasons" name="account-purpose" class="inline" /> Work Reasons</label>
+        
+        <label for="recommend"> Do you recommend learning how to code?
+          <input id="recommend"type="checkbox" required name="recommend" value="checkbox" class="inline"</label>
+        <label for="terms-and-conditions"> Do you accept the terms and conditions?
+                  <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="checkbox" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+
+      </fieldset>
+      <fieldset>
+        <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
+        <label for="number" label id="number-label">Input your age (years): <input id="number" type="number" name="age" min="13" max="99" placeholder="23" /></label>
+        <label for="referrer">What is your favorite coding language?
+          <select id="dropdown" name="favorite-coding-language">
+            <option value="">(select one)</option>
+            <option value="1">Python</option>
+            <option value="2">HTML/CSS</option>
+            <option value="3">C++</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
